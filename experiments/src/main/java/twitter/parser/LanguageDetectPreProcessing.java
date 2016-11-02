@@ -8,10 +8,10 @@ import java.util.Map;
 
 import com.twitter.Extractor;
 
-import twitter.DataStructures.Twitter.ParsedRetweet;
-import twitter.DataStructures.Twitter.ParsedThinUser;
-import twitter.DataStructures.Twitter.ParsedTweet;
-import twitter.DataStructures.Twitter.ParsedUserActivity;
+import twitter.DataStructures.ParsedRetweet;
+import twitter.DataStructures.ParsedThinUser;
+import twitter.DataStructures.ParsedTweet;
+import twitter.DataStructures.ParsedUserActivity;
 
 public class LanguageDetectPreProcessing {
 	public int ndetect=0;

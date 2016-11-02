@@ -12,9 +12,9 @@ import com.ooon.lzj.pretreatment.TestData2id;
 import com.ooon.lzj.pretreatment.word2id;
 import com.twitter.Extractor;
 
-import twitter.DataStructures.Twitter.BTMTweet;
-import twitter.DataStructures.Twitter.TweetEvent;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.BTMTweet;
+import twitter.DataStructures.TweetEvent;
+import twitter.DataStructures.UserData;
 
 public class BTMModelTrainerHASH extends BTMModelTrainer {
 	protected Map<String, String> hashtagDocsMap;

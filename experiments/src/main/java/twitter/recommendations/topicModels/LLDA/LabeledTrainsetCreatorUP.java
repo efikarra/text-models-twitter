@@ -7,8 +7,8 @@ import java.util.Map;
 
 import twitter.DataStructures.LabeledDocument;
 import twitter.DataStructures.TrainingDocument;
-import twitter.DataStructures.Twitter.TweetEvent;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.TweetEvent;
+import twitter.DataStructures.UserData;
 
 public class LabeledTrainsetCreatorUP extends LabeledSetCreator{
 	protected LLDAParameters params;

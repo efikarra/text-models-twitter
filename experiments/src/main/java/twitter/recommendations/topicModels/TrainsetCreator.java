@@ -3,7 +3,7 @@ package twitter.recommendations.topicModels;
 import java.util.List;
 
 import twitter.DataStructures.TrainingDocument;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.UserData;
 
 public abstract class TrainsetCreator {
 	protected UserData data;

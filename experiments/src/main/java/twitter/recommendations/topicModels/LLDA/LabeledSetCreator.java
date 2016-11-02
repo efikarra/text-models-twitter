@@ -3,7 +3,7 @@ package twitter.recommendations.topicModels.LLDA;
 import java.util.List;
 
 import twitter.DataStructures.LabeledDocument;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.UserData;
 
 public abstract class LabeledSetCreator {
 	protected UserData data;

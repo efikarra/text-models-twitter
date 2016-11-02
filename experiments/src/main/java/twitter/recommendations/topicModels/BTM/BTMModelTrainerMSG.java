@@ -7,9 +7,9 @@ import com.ooon.lzj.model.Model;
 import com.ooon.lzj.pretreatment.TestData2id;
 import com.ooon.lzj.pretreatment.word2id;
 
-import twitter.DataStructures.Twitter.BTMTweet;
-import twitter.DataStructures.Twitter.TweetEvent;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.BTMTweet;
+import twitter.DataStructures.TweetEvent;
+import twitter.DataStructures.UserData;
 
 public class BTMModelTrainerMSG extends BTMModelTrainer {
 	public BTMModelTrainerMSG(String tmodel_dir, List<UserData> data, BTMParameters param) {

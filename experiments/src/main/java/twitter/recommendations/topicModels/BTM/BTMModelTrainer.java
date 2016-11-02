@@ -7,8 +7,8 @@ import java.util.Map;
 
 import com.ooon.lzj.model.Model;
 
-import twitter.DataStructures.Twitter.BTMTweet;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.BTMTweet;
+import twitter.DataStructures.UserData;
 import twitter.recommendations.topicModels.AbstractModelTrainer;
 
 public abstract class BTMModelTrainer extends AbstractModelTrainer{

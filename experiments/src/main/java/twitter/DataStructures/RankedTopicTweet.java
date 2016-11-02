@@ -1,4 +1,4 @@
-package twitter.DataStructures.Twitter;
+package twitter.DataStructures;
 
 public class RankedTopicTweet implements Comparable{
 	 private double similarity;

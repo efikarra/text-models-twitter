@@ -1,4 +1,4 @@
-package twitter.DataStructures.Twitter;
+package twitter.DataStructures;
 
 public class RankedTweet implements Comparable {
 

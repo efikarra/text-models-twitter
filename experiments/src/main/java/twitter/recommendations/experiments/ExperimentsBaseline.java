@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import twitter.AbstractModelTrainer;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.UserData;
 import twitter.recommendations.baseline.ChronBaselineTrainer;
 import twitter.recommendations.baseline.RandomBaselineTrainer;
 import twitter.recommendations.evaluation.EvaluatorUtils;

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import twitter.DataStructures.Twitter.ParsedUserActivity;
-import twitter.DataStructures.Twitter.UserActivity;
+import twitter.DataStructures.ParsedUserActivity;
+import twitter.DataStructures.UserActivity;
 import twitter.Utilities.Constants;
 import twitter.Utilities.FileUtilities;
 

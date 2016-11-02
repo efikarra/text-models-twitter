@@ -2,7 +2,7 @@ package twitter.recommendations.topicModels;
 
 import java.util.List;
 
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.UserData;
 import twitter.recommendations.topicModels.LDA.LDATopicModel;
 
 public abstract class AbstractModelTrainer {

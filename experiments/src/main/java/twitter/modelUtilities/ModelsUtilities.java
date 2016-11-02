@@ -12,16 +12,16 @@ import java.util.Set;
 
 import twitter.TestDataCreator;
 import twitter.TrainDataCreator;
-import twitter.DataStructures.Twitter.ParsedRetweet;
-import twitter.DataStructures.Twitter.ParsedThinUser;
-import twitter.DataStructures.Twitter.ParsedTweet;
-import twitter.DataStructures.Twitter.ParsedUserActivity;
-import twitter.DataStructures.Twitter.ReTweet;
-import twitter.DataStructures.Twitter.ThinTweet;
-import twitter.DataStructures.Twitter.ThinUser;
-import twitter.DataStructures.Twitter.TweetEvent;
-import twitter.DataStructures.Twitter.UserActivity;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.ParsedRetweet;
+import twitter.DataStructures.ParsedThinUser;
+import twitter.DataStructures.ParsedTweet;
+import twitter.DataStructures.ParsedUserActivity;
+import twitter.DataStructures.ReTweet;
+import twitter.DataStructures.ThinTweet;
+import twitter.DataStructures.ThinUser;
+import twitter.DataStructures.TweetEvent;
+import twitter.DataStructures.UserActivity;
+import twitter.DataStructures.UserData;
 import twitter.Utilities.Constants;
 import twitter.Utilities.Twitter.TwitterUtilities;
 

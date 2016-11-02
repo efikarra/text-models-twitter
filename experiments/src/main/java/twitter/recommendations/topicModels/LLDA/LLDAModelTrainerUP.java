@@ -5,10 +5,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import twitter.DataStructures.ThinTweet;
 import twitter.DataStructures.TrainingDocument;
-import twitter.DataStructures.Twitter.ThinTweet;
-import twitter.DataStructures.Twitter.TweetEvent;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.TweetEvent;
+import twitter.DataStructures.UserData;
 import twitter.recommendations.topicModels.LDA.LDAParameters;
 
 public class LLDAModelTrainerUP extends LLDAModelTrainer{

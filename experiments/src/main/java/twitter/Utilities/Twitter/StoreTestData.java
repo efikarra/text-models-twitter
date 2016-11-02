@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import twitter.DataStructures.Twitter.TweetEvent;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.TweetEvent;
+import twitter.DataStructures.UserData;
 import twitter.Utilities.SerializationUtilities;
 
 public class StoreTestData {

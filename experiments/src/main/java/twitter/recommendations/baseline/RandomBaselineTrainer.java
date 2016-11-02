@@ -4,8 +4,8 @@ import java.util.Collections;
 import java.util.List;
 
 import twitter.AbstractModelTrainer;
-import twitter.DataStructures.Twitter.TweetEvent;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.TweetEvent;
+import twitter.DataStructures.UserData;
 import twitter.recommendations.evaluation.RankingMetrics;
 
 public class RandomBaselineTrainer extends AbstractModelTrainer {

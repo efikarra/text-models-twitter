@@ -1,6 +1,6 @@
 package twitter;
 
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.UserData;
 import twitter.recommendations.evaluation.RankingMetrics;
 import twitter.recommendations.topicModels.AbstractTopicModel;
 

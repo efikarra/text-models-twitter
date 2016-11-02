@@ -2,7 +2,7 @@ package twitter.recommendations.topicModels;
 
 import java.util.List;
 
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.UserData;
 
 public abstract class UnsupModelTrainer extends AbstractModelTrainer{
 	protected UnsupTopicModel topicModel;

@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.Map;
 
 import twitter.DataStructures.LabeledDocument;
-import twitter.DataStructures.Twitter.TopicTweet;
-import twitter.DataStructures.Twitter.TweetEvent;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.TopicTweet;
+import twitter.DataStructures.TweetEvent;
+import twitter.DataStructures.UserData;
 import twitter.modelUtilities.AbstractStrategy;
 import twitter.modelUtilities.MergeStrategy;
 import twitter.modelUtilities.RocchioStrategy;

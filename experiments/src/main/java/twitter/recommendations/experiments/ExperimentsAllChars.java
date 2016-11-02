@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.Map;
 
 import twitter.TestDataCreator;
-import twitter.DataStructures.Twitter.ParsedUserActivity;
-import twitter.DataStructures.Twitter.UserActivity;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.ParsedUserActivity;
+import twitter.DataStructures.UserActivity;
+import twitter.DataStructures.UserData;
 import twitter.Utilities.Twitter.GetUserActivities;
 import twitter.modelUtilities.MergeStrategy;
 import twitter.modelUtilities.ModelInfoSource;
@@ -23,14 +23,8 @@ import twitter.recommendations.topicModels.LDA.LDAParameters;
 public class ExperimentsAllChars {
 	public static void main(String[] args) throws Exception {
 		int matchedThreshold = 20;
-		// String usersPath =
-		// "/home/efi/master-thesis/resultUsers/serializedUsersdupls/";
 		String usersPath = "/home/efikarra/Twitter/experiments/processing/serializedUsersdupls/";
-		// String usersPath =
-		// "/media/efi/APOTHETHS/master/thesis/dataset/serializedUsers/";
-		// String usersPath="D:\\master\\thesis\\dataset\\serializedUsers\\";
-		// String
-		// usersPath="/home/efikarra/Twitter/experiments/processing/serializedUsers/";
+	
 		Map<String, String> usersMap = new HashMap<String, String>();
 		GetUserActivities getActivities = new GetUserActivities(usersPath);
 		List<UserActivity> pacts = new ArrayList<UserActivity>();

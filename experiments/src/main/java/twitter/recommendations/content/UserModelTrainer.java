@@ -10,10 +10,10 @@ import java.util.Map.Entry;
 import Models.AbstractModel;
 import Utilities.SimilarityName;
 import twitter.AbstractModelTrainer;
-import twitter.DataStructures.Twitter.CombinedTweet;
-import twitter.DataStructures.Twitter.RankedTweet;
-import twitter.DataStructures.Twitter.TweetEvent;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.CombinedTweet;
+import twitter.DataStructures.RankedTweet;
+import twitter.DataStructures.TweetEvent;
+import twitter.DataStructures.UserData;
 import twitter.recommendations.content.models.ContentAbstractModel;
 import twitter.recommendations.evaluation.RankingMetrics;
 

@@ -9,7 +9,7 @@ import java.util.Map;
 import Models.AbstractModel;
 import Utilities.RepresentationModel;
 import Utilities.SimilarityName;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.UserData;
 import twitter.modelUtilities.ContentModelType;
 import twitter.modelUtilities.ModelInfoSource;
 import twitter.modelUtilities.RoccioModelType;

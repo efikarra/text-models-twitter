@@ -1,4 +1,4 @@
-package twitter.DataStructures.Twitter;
+package twitter.DataStructures;
 
 import Models.AbstractModel;
 import Utilities.RepresentationModel;

@@ -9,10 +9,10 @@ import java.util.Map.Entry;
 
 import Models.VectorModel;
 import twitter.AbstractModelTrainer;
-import twitter.DataStructures.Twitter.CombinedTweet;
-import twitter.DataStructures.Twitter.RankedTweet;
-import twitter.DataStructures.Twitter.TweetEvent;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.CombinedTweet;
+import twitter.DataStructures.RankedTweet;
+import twitter.DataStructures.TweetEvent;
+import twitter.DataStructures.UserData;
 import twitter.modelUtilities.RoccioModelType;
 import twitter.modelUtilities.RoccioSimilarityType;
 import twitter.recommendations.content.models.ContentVectorModel;

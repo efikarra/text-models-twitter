@@ -8,10 +8,10 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import twitter.AbstractModelTrainer;
-import twitter.DataStructures.Twitter.RankedTopicTweet;
-import twitter.DataStructures.Twitter.TopicTweet;
-import twitter.DataStructures.Twitter.TweetEvent;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.RankedTopicTweet;
+import twitter.DataStructures.TopicTweet;
+import twitter.DataStructures.TweetEvent;
+import twitter.DataStructures.UserData;
 import twitter.Utilities.Similarities;
 import twitter.modelUtilities.AbstractStrategy;
 import twitter.modelUtilities.MergeStrategy;

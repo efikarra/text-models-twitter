@@ -9,9 +9,9 @@ import java.util.Map;
 import com.ooon.lzj.model.Infer;
 import com.ooon.lzj.model.Model;
 
-import twitter.DataStructures.Twitter.BTMTweet;
-import twitter.DataStructures.Twitter.TopicTweet;
-import twitter.DataStructures.Twitter.TweetEvent;
+import twitter.DataStructures.BTMTweet;
+import twitter.DataStructures.TopicTweet;
+import twitter.DataStructures.TweetEvent;
 import twitter.Utilities.SerializationUtilities;
 import twitter.modelUtilities.AbstractStrategy;
 import twitter.modelUtilities.MergeStrategy;

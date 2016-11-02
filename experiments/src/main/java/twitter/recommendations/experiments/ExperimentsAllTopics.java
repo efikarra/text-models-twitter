@@ -9,9 +9,9 @@ import java.util.Map;
 import java.util.Set;
 
 import twitter.ParametersGenerator;
-import twitter.DataStructures.Twitter.ParsedUserActivity;
-import twitter.DataStructures.Twitter.UserActivity;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.ParsedUserActivity;
+import twitter.DataStructures.UserActivity;
+import twitter.DataStructures.UserData;
 import twitter.Utilities.Twitter.GetUserActivities;
 import twitter.Utilities.Twitter.StoreTestData;
 import twitter.modelUtilities.MergeStrategy;

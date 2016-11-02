@@ -5,10 +5,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import twitter.DataStructures.Twitter.ReTweet;
-import twitter.DataStructures.Twitter.ThinTweet;
-import twitter.DataStructures.Twitter.ThinUser;
-import twitter.DataStructures.Twitter.UserActivity;
+import twitter.DataStructures.ReTweet;
+import twitter.DataStructures.ThinTweet;
+import twitter.DataStructures.ThinUser;
+import twitter.DataStructures.UserActivity;
 import twitter.Utilities.Constants;
 import twitter.Utilities.SerializationUtilities;
 import twitter.Utilities.Twitter.GetUserActivities;

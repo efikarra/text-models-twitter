@@ -12,10 +12,10 @@ import java.util.Set;
 import twitter.ParametersGenerator;
 import twitter.TestDataCreator;
 import twitter.TestPDataCreator;
-import twitter.DataStructures.Twitter.ParsedUserActivity;
-import twitter.DataStructures.Twitter.TweetEvent;
-import twitter.DataStructures.Twitter.UserActivity;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.ParsedUserActivity;
+import twitter.DataStructures.TweetEvent;
+import twitter.DataStructures.UserActivity;
+import twitter.DataStructures.UserData;
 import twitter.Utilities.Twitter.GetUserActivities;
 import twitter.Utilities.Twitter.StoreTestData;
 import twitter.modelUtilities.MergeStrategy;
@@ -35,10 +35,8 @@ import twitter.recommendations.topicModels.PLSA.PLSAParameters;
 public class ExperimentsAllTokens {
 
 	public static void main(String[] args) throws Exception {
-		//String initUsersPath = "/media/efi/APOTHETHS/master/thesis/dataset/usersFinal/";
-		String initUsersPath = "/home/efikarra/Twitter/usersFinal/";
-		//	String initUsersPath = "/home/efi/master-thesis/experimentUsers/usersFinal/";
-		//String initUsersPath = "D://master//thesis//dataset//usersFinal//";
+		//String initUsersPath = "/home/efikarra/Twitter/usersFinal/";
+		String initUsersPath = "D://master//thesis//dataset//usersFinal//";
 
 			GetUserActivities getActivities1 = new GetUserActivities(initUsersPath);
 			List<UserActivity> pacts1 = new ArrayList<UserActivity>();
@@ -65,10 +63,8 @@ public class ExperimentsAllTokens {
 				}
 				
 			}
-			//String usersPath = "/media/efi/APOTHETHS/master/thesis/dataset/filteredUsersFinal100only/";
-			String usersPath = "/home/efikarra/Twitter/filteredUsersFinal100only/";
-			//String usersPath = "/home/efi/master-thesis/experimentUsers/filteredUsersFinal100only/";
-			//String usersPath = "D://master//thesis//dataset//filteredUsersFinal100only/";
+			//String usersPath = "/home/efikarra/Twitter/filteredUsersFinal100only/";
+			String usersPath = "D://master//thesis//dataset//filteredUsersFinal100only/";
 
 			Map<String, String> usersMap = new HashMap<String, String>();
 			GetUserActivities getActivities = new GetUserActivities(usersPath);
@@ -138,7 +134,7 @@ public class ExperimentsAllTokens {
 			List<BTMParameters> paramsBTMMSG = new ArrayList<BTMParameters>();
 			//paramsBTMMSG.add(new BTMParameters(50,1000, 0.01, 25000));
 			//paramsBTMMSG.add(new BTMParameters(100, 1000, 0.01, 25000));
-			paramsBTMMSG.add(new BTMParameters(150,1000, 0.01, 25000));
+			paramsBTMMSG.add(new BTMParameters(150,3, 0.01, 25000));
 			//paramsBTMMSG.add(new BTMParameters(200, 1000, 0.01, 25000));
 //			paramsBTMMSG.add(new BTMParameters(50, 2000, 0.01, 25000));
 //			paramsBTMMSG.add(new BTMParameters(100, 2000, 0.01, 25000));
@@ -147,7 +143,7 @@ public class ExperimentsAllTokens {
 			List<BTMParameters> paramsBTMUP = new ArrayList<BTMParameters>();
 			//paramsBTMUP.add(new BTMParameters(50, 1000, 0.01, 30));
 			//paramsBTMUP.add(new BTMParameters(100, 1000, 0.01, 30));
-			paramsBTMUP.add(new BTMParameters(150, 1000, 0.01, 30));
+			paramsBTMUP.add(new BTMParameters(150, 3, 0.01, 30));
 			//paramsBTMUP.add(new BTMParameters(200, 1000, 0.01, 30));
 //			paramsBTMUP.add(new BTMParameters(50, 1000, 0.01, 50));
 //			paramsBTMUP.add(new BTMParameters(100, 1000, 0.01, 50));
@@ -205,10 +201,10 @@ public class ExperimentsAllTokens {
 			//topicStrategies.add(TopicModelTrainStrategy.HASH_STRATEGY);
 
 			Map<TopicModelName, Map<String, List<TopicModelParams>>> allParamsMap = new HashMap<TopicModelName, Map<String, List<TopicModelParams>>>();
-			allParamsMap.put(TopicModelName.LDA, strategyParamsLDA);
+			//allParamsMap.put(TopicModelName.LDA, strategyParamsLDA);
 			//allParamsMap.put(TopicModelName.PLSA, strategyParamsPLSA);
 			//allParamsMap.put(TopicModelName.HLDA, strategyHLDAParams);
-			//allParamsMap.put(TopicModelName.HDP, strategyParamsHDP);
+			allParamsMap.put(TopicModelName.HDP, strategyParamsHDP);
 
 			String BTMModelDir = "/home/efi/master-thesis/models/biterm/";
 			//String BTMModelDir = "/home/efikarra/Twitter/models-backup/biterm/";
@@ -226,8 +222,8 @@ public class ExperimentsAllTokens {
 //			//ModelsUtilities.printTestSetStatistics(userData);
 //			refDateMap.put(pacts.get(i).getUserName(), creator.getRefTime());
 //		}
-			userDataMap=StoreTestData.loadTestUserData("/home/efikarra/Twitter/all_userdata");
-			//userDataMap=StoreTestData.loadTestUserData("D://master//thesis//dataset//all_userdata");
+			//userDataMap=StoreTestData.loadTestUserData("/home/efikarra/Twitter/all_userdata");
+			userDataMap=StoreTestData.loadTestUserData("D://master//thesis//dataset//all_userdata");
 			for(UserData uData : userDataMap.values()){
 				Collections.sort(uData.getTestTweets());
 				refDateMap.put(uData.getUserName(),uData.getTestTweets().get(0).getThinTweet().getTimeStamp());
@@ -265,8 +261,8 @@ public class ExperimentsAllTokens {
 				// strategyParamsLLDA, mergeStrategies, topicStrategies,usersMap,usersStrictMap,negposTypes,rparams);
 				ExperimentsUnsupTopic.run(ModelInfoSource.name(type), userDataMap, allParamsMap, mergeStrategies,
 						topicStrategies, usersMap,usersStrictMap,negposTypes,rparams);
-				//ExperimentsBTM.run(ModelInfoSource.name(type), userDataMap,
-			// strategyParamsbtm, mergeStrategies, topicStrategies,BTMModelDir,usersMap,usersStrictMap,negposTypes,rparams);
+				ExperimentsBTM.run(ModelInfoSource.name(type), userDataMap,
+			 strategyParamsbtm, mergeStrategies, topicStrategies,BTMModelDir,usersMap,usersStrictMap,negposTypes,rparams);
 		//		ExperimentsContentM.runCharGraphs(type, userDataMap, usersMap, usersStrictMap);
 				List<RoccioParams> roccioParams = new ArrayList<RoccioParams>();
 				roccioParams.add(new RoccioParams(0.8, -0.2));
@@ -288,10 +284,7 @@ public class ExperimentsAllTokens {
 		//runChars(testTweetsMap);
 	}
 	public static void runChars(Map<String,List<TweetEvent>> testTweetsMap) throws Exception {
-		//String usersPath = "/home/efikarra/Twitter/experiments/processing/serializedUsersdupls/";
-		//String usersPath = "D://master//thesis//dataset//usersFinal//";
 		String usersPath = "/home/efikarra/Twitter/usersFinal/";
-		//String usersPath = "/media/efi/APOTHETHS/master/thesis/dataset/usersFinal/";
 		Map<String, String> usersMap = new HashMap<String, String>();
 		GetUserActivities getActivities = new GetUserActivities(usersPath);
 		List<UserActivity> pacts = new ArrayList<UserActivity>();

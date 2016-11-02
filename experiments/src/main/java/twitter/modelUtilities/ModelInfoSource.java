@@ -2,10 +2,10 @@ package twitter.modelUtilities;
 
 import twitter.TrainDataCreator;
 import twitter.TrainPDataCreator;
-import twitter.DataStructures.Twitter.ParsedUserActivity;
-import twitter.DataStructures.Twitter.TweetEvent;
-import twitter.DataStructures.Twitter.UserActivity;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.ParsedUserActivity;
+import twitter.DataStructures.TweetEvent;
+import twitter.DataStructures.UserActivity;
+import twitter.DataStructures.UserData;
 
 public enum ModelInfoSource {
 	URT,UT,FR,FE,RE,UT_URT,U_FR,URT_FR,U_FE,URT_FE,FE_FR,U_RE,URT_RE;

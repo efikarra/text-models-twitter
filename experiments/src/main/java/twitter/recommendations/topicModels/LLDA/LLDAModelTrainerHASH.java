@@ -10,8 +10,8 @@ import java.util.Set;
 import com.twitter.Extractor;
 
 import twitter.DataStructures.TrainingDocument;
-import twitter.DataStructures.Twitter.TweetEvent;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.TweetEvent;
+import twitter.DataStructures.UserData;
 import twitter.recommendations.topicModels.LDA.LDAParameters;
 
 public class LLDAModelTrainerHASH extends LLDAModelTrainer{

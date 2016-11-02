@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import twitter.DataStructures.Twitter.ParsedUserActivity;
+import twitter.DataStructures.ParsedUserActivity;
 import twitter.Utilities.Twitter.GetUserActivities;
 import twitter.parser.LanguageDetectPreProcessing;
 

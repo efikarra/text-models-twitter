@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import twitter.DataStructures.Twitter.TweetEvent;
+import twitter.DataStructures.TweetEvent;
 import twitter.Utilities.Constants;
 import twitter.Utilities.StringUtilities;
 

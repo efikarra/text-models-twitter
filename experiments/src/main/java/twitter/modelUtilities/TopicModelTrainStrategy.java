@@ -2,7 +2,7 @@ package twitter.modelUtilities;
 
 import java.util.List;
 
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.UserData;
 import twitter.recommendations.topicModels.TrainsetCreator;
 import twitter.recommendations.topicModels.UnsupModelTrainer;
 import twitter.recommendations.topicModels.UnsupTopicModel;

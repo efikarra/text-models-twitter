@@ -12,12 +12,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import twitter.DataStructures.Twitter.ReTweet;
-import twitter.DataStructures.Twitter.ThinTweet;
-import twitter.DataStructures.Twitter.ThinUser;
-import twitter.DataStructures.Twitter.TweetEvent;
-import twitter.DataStructures.Twitter.UserActivity;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.ReTweet;
+import twitter.DataStructures.ThinTweet;
+import twitter.DataStructures.ThinUser;
+import twitter.DataStructures.TweetEvent;
+import twitter.DataStructures.UserActivity;
+import twitter.DataStructures.UserData;
 import twitter.Utilities.Constants;
 import twitter.Utilities.Twitter.TwitterUtilities;
 import twitter.modelUtilities.ModelsUtilities;

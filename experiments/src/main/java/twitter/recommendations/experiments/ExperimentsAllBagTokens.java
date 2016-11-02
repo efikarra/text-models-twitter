@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Map;
 
 import twitter.TestPDataCreator;
-import twitter.DataStructures.Twitter.ParsedUserActivity;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.ParsedUserActivity;
+import twitter.DataStructures.UserData;
 import twitter.Utilities.Twitter.GetUserActivities;
 import twitter.modelUtilities.ModelInfoSource;
 import twitter.modelUtilities.ModelsUtilities;

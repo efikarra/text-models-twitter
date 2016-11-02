@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Map;
 
 import twitter.DataStructures.TrainingDocument;
-import twitter.DataStructures.Twitter.TweetEvent;
-import twitter.DataStructures.Twitter.UserData;
+import twitter.DataStructures.TweetEvent;
+import twitter.DataStructures.UserData;
 import twitter.recommendations.topicModels.TrainsetCreator;
 
 public class TrainsetCreatorUP extends TrainsetCreator {

@@ -1,6 +1,5 @@
 package twitter.recommendations.content;
 
-import Models.AbstractModel;
 import Similarities.AbstractSimilarity;
 import Utilities.SimilarityName;
 import twitter.recommendations.content.models.ContentAbstractModel;
